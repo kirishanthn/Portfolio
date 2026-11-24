@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kirishanthan N | Software Engineer & AI Application Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#090d16',
+              card: '#111827',
+              accent: '#6366f1',
+              cyan: '#06b6d4',
+              emerald: '#10b981',
+              text: '#f3f4f6',
+              muted: '#9ca3af'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      background-color: #090d16;
+      color: #f3f4f6;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+    .glass-panel {
+      background: rgba(17, 24, 39, 0.7);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-panel:hover {
+      border-color: rgba(99, 102, 241, 0.3);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #6366f1 0%, #06b6d4 50%, #10b981 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gradient-border {
+      position: relative;
+      border-radius: 1rem;
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(6, 182, 212, 0.2));
+      padding: 1px;
+    }
+    .gradient-border > div {
+      background: #0d1322;
+      border-radius: calc(1rem - 1px);
+    }
+    .filter-btn.active {
+      background: linear-gradient(135deg, #6366f1, #06b6d4);
+      color: #ffffff;
+      box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+    }
+  </style>
+</head>
+<body class="selection:bg-brand-accent selection:text-white">
+
+  <!-- NAVIGATION -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#hero" class="text-2xl font-extrabold tracking-tight flex items-center gap-2">
+        <span class="gradient-text">&lt;Kirishanthan.N /&gt;</span>
+      </a>
+      
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-brand-muted">
+        <a href="#about" class="hover:text-white transition-colors">About</a>
+        <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+        <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+        <a href="#experience" class="hover:text-white transition-colors">Experience</a>
+        <a href="#education" class="hover:text-white transition-colors">Education</a>
+      </div>
+
+      <a href="#contact" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-brand-accent text-white font-semibold text-sm hover:bg-indigo-600 transition-all shadow-lg shadow-indigo-500/25">
+        <i class="fa-solid fa-paper-plane text-xs"></i> Get In Touch
+      </a>
+
+      <button id="menu-btn" class="md:hidden text-2xl text-brand-muted hover:text-white">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="fixed inset-0 z-40 bg-brand-bg/95 backdrop-blur-xl hidden flex-col justify-center items-center gap-8 text-xl font-semibold">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#education" class="mobile-link">Education</a>
+    <a href="#contact" class="mobile-link text-brand-accent">Get In Touch</a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="min-h-screen pt-32 pb-20 flex items-center relative overflow-hidden">
+    <div class="absolute top-1/4 left-10 w-96 h-96 bg-brand-accent/10 rounded-full filter blur-3xl -z-10"></div>
+    <div class="absolute bottom-10 right-10 w-96 h-96 bg-brand-cyan/10 rounded-full filter blur-3xl -z-10"></div>
+
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 space-y-8">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel border border-brand-accent/30 text-brand-cyan text-xs font-mono font-semibold tracking-wide uppercase">
+          <span class="w-2 h-2 rounded-full bg-brand-emerald animate-ping"></span>
+          Available for Hire & Freelance Projects
+        </div>
+
+        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+          Crafting Intelligent <br />
+          <span class="gradient-text">Full-Stack & AI Systems</span>
+        </h1>
+
+        <p class="text-brand-muted text-lg max-w-2xl leading-relaxed">
+          Software Engineer specializing in scalable web, desktop, and mobile architectures. Experienced in building enterprise operational platforms and integrating state-of-the-art AI models like Google Gemini and ML Kit.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-4 pt-4">
+          <a href="#projects" class="px-7 py-3.5 rounded-xl bg-brand-accent text-white font-semibold flex items-center gap-3 hover:bg-indigo-600 transition-all shadow-xl shadow-indigo-500/20">
+            View Projects <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+          <a href="#contact" class="px-7 py-3.5 rounded-xl glass-panel text-white font-semibold hover:bg-white/10 transition-all">
+            Contact Me
+          </a>
+        </div>
+
+        <div class="flex items-center gap-6 pt-6 text-brand-muted">
+          <a href="https://github.com/kirishanthn" target="_blank" class="hover:text-brand-cyan text-2xl transition-colors"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/kirishanthn" target="_blank" class="hover:text-brand-cyan text-2xl transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:kirishanthn002@gmail.com" class="hover:text-brand-cyan text-2xl transition-colors"><i class="fa-solid fa-envelope"></i></a>
+          <span class="text-sm font-mono text-brand-muted/70"><i class="fa-solid fa-location-dot text-brand-accent mr-1"></i> Batticaloa, Sri Lanka</span>
+        </div>
+      </div>
+
+      <!-- CODE WINDOW DEMO -->
+      <div class="lg:col-span-5">
+        <div class="gradient-border shadow-2xl">
+          <div class="p-6 font-mono text-sm leading-relaxed space-y-4">
+            <div class="flex items-center gap-2 border-b border-white/10 pb-4 mb-4">
+              <span class="w-3 h-3 rounded-full bg-red-500"></span>
+              <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+              <span class="w-3 h-3 rounded-full bg-green-500"></span>
+              <span class="ml-2 text-xs text-brand-muted">DeveloperProfile.json</span>
+            </div>
+            <div>
+              <span class="text-brand-accent">const</span> <span class="text-brand-cyan">engineer</span> = {<br />
+              &nbsp;&nbsp;<span class="text-brand-emerald">name</span>: <span class="text-yellow-300">'Kirishanthan N'</span>,<br />
+              &nbsp;&nbsp;<span class="text-brand-emerald">role</span>: <span class="text-yellow-300">'Software Engineer'</span>,<br />
+              &nbsp;&nbsp;<span class="text-brand-emerald">education</span>: <span class="text-yellow-300">'BTech in Software & AI Systems'</span>,<br />
+              &nbsp;&nbsp;<span class="text-brand-emerald">coreSkills</span>: [<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-yellow-300">'Laravel'</span>, <span class="text-yellow-300">'React'</span>, <span class="text-yellow-300">'ASP.NET MVC'</span>,<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-yellow-300">'Google Gemini API'</span>, <span class="text-yellow-300">'C# / Java'</span><br />
+              &nbsp;&nbsp;],<br />
+              &nbsp;&nbsp;<span class="text-brand-emerald">languages</span>: [<span class="text-yellow-300">'English'</span>, <span class="text-yellow-300">'Tamil'</span>, <span class="text-yellow-300">'Sinhala'</span>],<br />
+              &nbsp;&nbsp;<span class="text-brand-emerald">status</span>: <span class="text-yellow-300">'Building Scalable Solutions'</span><br />
+              };
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUMMARY / ABOUT -->
+  <section id="about" class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="glass-panel p-8 md:p-12 rounded-3xl relative overflow-hidden">
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-8 space-y-4">
+            <h2 class="text-xs font-mono font-semibold uppercase tracking-widest text-brand-cyan">Executive Summary</h2>
+            <h3 class="text-2xl sm:text-3xl font-bold">Driving Business Impact Through Engineered Precision & AI Innovation</h3>
+            <p class="text-brand-muted leading-relaxed">
+              Software Engineer with extensive experience in designing and developing modern web, desktop, and mobile applications using C#, Java, Python, ASP.NET MVC, PHP, JavaScript, React, Laravel, SQL Server, MySQL, and MongoDB. Skilled in building scalable, user-focused software with clean architecture, responsive interfaces, and secure backend systems. Experienced in integrating AI technologies, including the Google Gemini API, to develop intelligent features such as chatbots, automation, and smart recommendations.
+            </p>
+          </div>
+          <div class="lg:col-span-4 grid grid-cols-2 gap-4 text-center">
+            <div class="glass-panel p-6 rounded-2xl border border-white/5">
+              <div class="text-3xl font-extrabold gradient-text">3+</div>
+              <div class="text-xs text-brand-muted mt-1 uppercase font-mono">Years Exp.</div>
+            </div>
+            <div class="glass-panel p-6 rounded-2xl border border-white/5">
+              <div class="text-3xl font-extrabold text-brand-cyan">3+</div>
+              <div class="text-xs text-brand-muted mt-1 uppercase font-mono">Key Core Architectures</div>
+            </div>
+            <div class="glass-panel p-6 rounded-2xl border border-white/5">
+              <div class="text-3xl font-extrabold text-brand-emerald">100%</div>
+              <div class="text-xs text-brand-muted mt-1 uppercase font-mono">Clean Code & Security</div>
+            </div>
+            <div class="glass-panel p-6 rounded-2xl border border-white/5">
+              <div class="text-3xl font-extrabold text-indigo-400">AI</div>
+              <div class="text-xs text-brand-muted mt-1 uppercase font-mono">Integrated Workflows</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION (INTERACTIVE) -->
+  <section id="projects" class="py-20">
+    <div class="max-w-7xl mx-auto px-6 space-y-12">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div>
+          <h2 class="text-xs font-mono font-semibold uppercase tracking-widest text-brand-cyan">Featured Portfolio</h2>
+          <h3 class="text-3xl sm:text-4xl font-extrabold mt-2">Engineered Software Projects</h3>
+        </div>
+        
+        <!-- Filter Controls -->
+        <div class="flex flex-wrap gap-2">
+          <button class="filter-btn active px-4 py-2 rounded-lg text-xs font-semibold glass-panel transition-all" data-filter="all">All</button>
+          <button class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold glass-panel transition-all" data-filter="web">Web & Finance</button>
+          <button class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold glass-panel transition-all" data-filter="desktop">Desktop / POS</button>
+          <button class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold glass-panel transition-all" data-filter="ai">AI & Mobile</button>
+        </div>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+        
+        <!-- PROJECT 1: ALPHA FINANCE -->
+        <div class="project-card glass-panel rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-2" data-category="web">
+          <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-mono border border-indigo-500/20">Full-Stack Enterprise</span>
+                <span class="text-xs text-brand-muted font-mono">Aug 2025 - Present</span>
+              </div>
+              <h4 class="text-xl font-bold flex items-center justify-between">
+                Alpha Finance Platform
+                <a href="https://alphafinance.lk" target="_blank" class="text-brand-cyan hover:text-white text-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </h4>
+              <p class="text-brand-muted text-sm leading-relaxed">
+                Custom financial loan and customer management platform engineered from the ground up for micro-lending operations.
+              </p>
+              <ul class="text-xs text-brand-muted space-y-2 pt-2 border-t border-white/5">
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-brand-emerald mt-0.5"></i>
+                  <span>Dynamic daily repayment calculations taking into account Sri Lankan working days and Poya holidays.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-brand-emerald mt-0.5"></i>
+                  <span>Role-based collector assignment scopes to secure daily collection routes and targets.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-brand-emerald mt-0.5"></i>
+                  <span>Real-time printable transactions and historical receipt archiving.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-brand-emerald mt-0.5"></i>
+                  <span>Managed web hosting deployment, domain registration, and DNS via Provider.lk.</span>
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5 font-mono text-xs">
+              <span class="px-2.5 py-1 rounded bg-white/5 text-brand-cyan">PHP</span>
+              <span class="px-2.5 py-1 rounded bg-white/5 text-brand-cyan">Laravel</span>
+              <span class="px-2.5 py-1 rounded bg-white/5 text-brand-cyan">MySQL</span>
+              <span class="px-2.5 py-1 rounded bg-white/5 text-brand-cyan">Provider.lk</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: GREEN LIFE POS -->
+        <div class="project-card glass-panel rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-2" data-category="desktop">
+          <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-mono border border-emerald-500/20">Desktop Software</span>
+                <span class="text-xs text-brand-muted font-mono">Desktop System</span>
+              </div>
+              <h4 class="text-xl font-bold">Green Life Organic Store</h4>
+              <p class="text-brand-muted text-sm leading-relaxed">
+                Comprehensive POS & Inventory Management System developed as a high-performance Windows desktop application.
+              </p>
+              <ul class="text-xs text-brand-muted space-y-2 pt-2 border-t border-white/5">
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-brand-emerald mt-0.5"></i>
+                  <span>Automated stock monitoring and real-time inventory tracking to maximize efficiency.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-brand-emerald mt-0.5"></i>
+                  <span>Integrated checkout sales processing and detailed customer management workflows.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-brand-emerald mt-0.5"></i>
+                  <span>Role-based access permissions, secure authentication, and robust sales analytics reporting.</span>
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5 font-mono text-xs">
+              <span class="px-2.5 py-1 rounded bg-white/5 text-brand-emerald">C# .NET</span>
+              <span class="px-2.5 py-1 rounded bg-white/5 text-brand-emerald">WinForms</span>
+              <span class="px-2.5 py-1 rounded bg-white/5 text-brand-emerald">SQL Server</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: TEXTVISION AI -->
+        <div class="project-card glass-panel rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-2" data-category="ai">
+          <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-mono border border-cyan-500/20">AI & Mobile ML</span>
+                <span class="text-xs text-brand-muted font-mono">Android App</span>
+              </div>
+              <h4 class="text-xl font-bold">TextVision - AI OCR App</h4>
+              <p class="text-brand-muted text-sm leading-relaxed">
+                On-device AI text recognition mobile application designed for instant Optical Character Recognition.
+              </p>
+              <ul class="text-xs text-brand-muted space-y-2 pt-2 border-t border-white/5">
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-brand-emerald mt-0.5"></i>
+                  <span>Integrated Google ML Kit for high-speed, accurate on-device optical character recognition.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-brand-emerald mt-0.5"></i>
+                  <span>Supports live camera image capture and existing image imports from system gallery.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-brand-emerald mt-0.5"></i>
+                  <span>Built-in real-time text parsing, formatting, copying, and instant sharing features.</span>
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5 font-mono text-xs">
+              <span class="px-2.5 py-1 rounded bg-white/5 text-brand-cyan">Android Studio</span>
+              <span class="px-2.5 py-1 rounded bg-white/5 text-brand-cyan">Java</span>
+              <span class="px-2.5 py-1 rounded bg-white/5 text-brand-cyan">Google ML Kit</span>
+              <span class="px-2.5 py-1 rounded bg-white/5 text-brand-cyan">Firebase</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS ARCHITECTURE -->
+  <section id="skills" class="py-20 relative bg-black/30">
+    <div class="max-w-7xl mx-auto px-6 space-y-12">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-xs font-mono font-semibold uppercase tracking-widest text-brand-cyan">Technical Stack</h2>
+        <h3 class="text-3xl font-extrabold mt-2">Comprehensive Skillset</h3>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="glass-panel p-6 rounded-2xl border border-white/5 space-y-4">
+          <div class="flex items-center gap-3 text-brand-accent">
+            <i class="fa-solid fa-code text-xl"></i>
+            <h4 class="font-bold text-lg text-white">Programming Languages</h4>
+          </div>
+          <div class="flex flex-wrap gap-2 font-mono text-xs">
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">C#</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Java</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Python</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">PHP</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">JavaScript</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">TypeScript</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">HTML5 / CSS3</span>
+          </div>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-white/5 space-y-4">
+          <div class="flex items-center gap-3 text-brand-cyan">
+            <i class="fa-solid fa-brain text-xl"></i>
+            <h4 class="font-bold text-lg text-white">AI & Machine Learning</h4>
+          </div>
+          <div class="flex flex-wrap gap-2 font-mono text-xs">
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Google Gemini API</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">AI Chatbots</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Prompt Engineering</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">ML Integration</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Google ML Kit</span>
+          </div>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-white/5 space-y-4">
+          <div class="flex items-center gap-3 text-brand-emerald">
+            <i class="fa-solid fa-server text-xl"></i>
+            <h4 class="font-bold text-lg text-white">Backend & Frameworks</h4>
+          </div>
+          <div class="flex flex-wrap gap-2 font-mono text-xs">
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Laravel</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Core PHP</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Node.js</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Express.js</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">ASP.NET MVC</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Spring Boot</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-white/5 space-y-4">
+          <div class="flex items-center gap-3 text-yellow-400">
+            <i class="fa-solid fa-layer-group text-xl"></i>
+            <h4 class="font-bold text-lg text-white">Frontend & UI/UX</h4>
+          </div>
+          <div class="flex flex-wrap gap-2 font-mono text-xs">
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">React.js</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Bootstrap</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">jQuery</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">AJAX</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Responsive Design</span>
+          </div>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-white/5 space-y-4">
+          <div class="flex items-center gap-3 text-pink-400">
+            <i class="fa-solid fa-database text-xl"></i>
+            <h4 class="font-bold text-lg text-white">Databases & Mobile</h4>
+          </div>
+          <div class="flex flex-wrap gap-2 font-mono text-xs">
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">MySQL</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">SQL Server</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">MongoDB</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Firebase</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Android Studio</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Flutter</span>
+          </div>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-white/5 space-y-4">
+          <div class="flex items-center gap-3 text-purple-400">
+            <i class="fa-solid fa-screwdriver-wrench text-xl"></i>
+            <h4 class="font-bold text-lg text-white">Tools & Engineering</h4>
+          </div>
+          <div class="flex flex-wrap gap-2 font-mono text-xs">
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Git / GitHub</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Visual Studio / VS Code</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Postman</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">Stripe SDK</span>
+            <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">OOP / MVC</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE & CAREER -->
+  <section id="experience" class="py-20">
+    <div class="max-w-7xl mx-auto px-6 space-y-12">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <h2 class="text-xs font-mono font-semibold uppercase tracking-widest text-brand-cyan">Career Path</h2>
+          <h3 class="text-3xl font-extrabold mt-2">Work Experience</h3>
+        </div>
+      </div>
+
+      <div class="relative border-l-2 border-white/10 pl-6 md:pl-10 space-y-12 ml-4 md:ml-6">
+        
+        <div class="relative">
+          <div class="absolute -left-[31px] md:-left-[47px] top-0 w-5 h-5 rounded-full bg-brand-accent border-4 border-brand-bg"></div>
+          <div class="glass-panel p-6 md:p-8 rounded-2xl border border-white/5 space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h4 class="text-xl font-bold">Freelance Software Engineer</h4>
+                <p class="text-brand-cyan font-mono text-sm">Self-Employed | Remote</p>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-brand-accent/20 text-brand-accent text-xs font-mono font-semibold">2024 - Present</span>
+            </div>
+            <ul class="text-brand-muted text-sm space-y-3 leading-relaxed">
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-chevron-right text-brand-accent text-xs mt-1"></i>
+                <span>Designed and developed custom web, desktop, and AI-powered applications for client solutions adhering to clean architectural practices.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-chevron-right text-brand-accent text-xs mt-1"></i>
+                <span>Engineered modern full-stack systems utilizing PHP, ASP.NET MVC, C#, JavaScript, MySQL, SQL Server, and Bootstrap.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-chevron-right text-brand-accent text-xs mt-1"></i>
+                <span>Integrated AI technologies including Google Gemini API to build smart chatbots, automation tools, and recommendation features.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-chevron-right text-brand-accent text-xs mt-1"></i>
+                <span>Developed secure RESTful APIs, authentication workflows, Stripe payment gateway integrations, and managed database schemas.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION & QUALIFICATIONS -->
+  <section id="education" class="py-20 bg-black/30">
+    <div class="max-w-7xl mx-auto px-6 space-y-12">
+      <div>
+        <h2 class="text-xs font-mono font-semibold uppercase tracking-widest text-brand-cyan">Academic Foundation</h2>
+        <h3 class="text-3xl font-extrabold mt-2">Education & Languages</h3>
+      </div>
+
+      <div class="grid md:grid-cols-12 gap-8">
+        
+        <div class="md:col-span-7 space-y-6">
+          <div class="glass-panel p-6 rounded-2xl border border-white/5 flex items-start gap-5">
+            <div class="p-4 rounded-xl bg-indigo-500/10 text-brand-accent text-2xl">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div>
+              <span class="text-xs font-mono text-brand-cyan">2025 - 2028 (Reading)</span>
+              <h4 class="text-lg font-bold">BTech in Software and Intelligent Systems</h4>
+              <p class="text-brand-muted text-sm">University of Vocational Technology</p>
+            </div>
+          </div>
+
+          <div class="glass-panel p-6 rounded-2xl border border-white/5 flex items-start gap-5">
+            <div class="p-4 rounded-xl bg-emerald-500/10 text-brand-emerald text-2xl">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div>
+              <span class="text-xs font-mono text-brand-emerald">2023 - 2024</span>
+              <h4 class="text-lg font-bold">Diploma in Information Communication Technology</h4>
+              <p class="text-brand-muted text-sm">Vocational Training Authority of Sri Lanka</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-5">
+          <div class="glass-panel p-6 rounded-2xl border border-white/5 h-full flex flex-col justify-between space-y-6">
+            <div>
+              <h4 class="font-bold text-lg mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-language text-brand-cyan"></i> Language Proficiency
+              </h4>
+              <div class="space-y-4 text-sm font-mono">
+                <div>
+                  <div class="flex justify-between mb-1">
+                    <span>English</span>
+                    <span class="text-brand-cyan">Fluent</span>
+                  </div>
+                  <div class="w-full h-2 bg-white/5 rounded-full overflow-hidden">
+                    <div class="w-11/12 h-full bg-brand-cyan rounded-full"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex justify-between mb-1">
+                    <span>Tamil</span>
+                    <span class="text-brand-emerald">Native</span>
+                  </div>
+                  <div class="w-full h-2 bg-white/5 rounded-full overflow-hidden">
+                    <div class="w-full h-full bg-brand-emerald rounded-full"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex justify-between mb-1">
+                    <span>Sinhala</span>
+                    <span class="text-brand-accent">Intermediate</span>
+                  </div>
+                  <div class="w-full h-2 bg-white/5 rounded-full overflow-hidden">
+                    <div class="w-7/12 h-full bg-brand-accent rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & FOOTER -->
+  <section id="contact" class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="glass-panel p-8 md:p-12 rounded-3xl text-center max-w-4xl mx-auto space-y-8 relative overflow-hidden">
+        <div class="space-y-3">
+          <h2 class="text-xs font-mono font-semibold uppercase tracking-widest text-brand-cyan">Get In Touch</h2>
+          <h3 class="text-3xl sm:text-4xl font-extrabold">Let's Build Something Exceptional Together</h3>
+          <p class="text-brand-muted max-w-xl mx-auto text-sm leading-relaxed">
+            Open for software engineering positions, complex full-stack web architectures, and AI integration projects.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-3 gap-4 font-mono text-xs">
+          <a href="mailto:kirishanthn002@gmail.com" class="p-4 rounded-xl glass-panel hover:bg-white/10 transition-all flex flex-col items-center gap-2">
+            <i class="fa-solid fa-envelope text-xl text-brand-accent"></i>
+            <span>kirishanthn002@gmail.com</span>
+          </a>
+          <a href="tel:0779792162" class="p-4 rounded-xl glass-panel hover:bg-white/10 transition-all flex flex-col items-center gap-2">
+            <i class="fa-solid fa-phone text-xl text-brand-cyan"></i>
+            <span>+94 77 979 2162</span>
+          </a>
+          <div class="p-4 rounded-xl glass-panel flex flex-col items-center gap-2">
+            <i class="fa-solid fa-location-dot text-xl text-brand-emerald"></i>
+            <span>Batticaloa, Sri Lanka</span>
+          </div>
+        </div>
+
+        <div class="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-brand-muted gap-4">
+          <p>© 2026 Kirishanthan N. All rights reserved.</p>
+          <div class="flex gap-4">
+            <a href="https://github.com/kirishanthn" target="_blank" class="hover:text-white">GitHub</a>
+            <a href="https://linkedin.com/in/kirishanthn" target="_blank" class="hover:text-white">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Project Category Filtering Logic
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filterValue = btn.getAttribute('data-filter');
+
+        projectCards.forEach(card => {
+          if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Mobile Navigation Toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('flex');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('flex');
+      });
+    });
+  </script>
+</body>
+</html>
