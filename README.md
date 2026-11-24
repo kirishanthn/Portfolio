@@ -1,103 +1,120 @@
 
 # Hi, I'm Kirishanthan 👋
 
-### Software Developer | Laravel & PHP Developer | B.Tech Student
+### 💻 Software Developer | Laravel & PHP Developer | B.Tech Student
 
-I'm a passionate Software Developer from Sri Lanka with hands-on experience in building web applications and software solutions.
-
-I have practical experience working with Laravel, PHP, MySQL, and modern web technologies. Currently pursuing a B.Tech in Software & Intelligent Systems, continuously improving my technical knowledge and development skills.
+<p align="left">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1000&color=2F80ED&width=500&lines=Software+Developer;Laravel+%26+PHP+Developer;Full+Stack+Developer+in+Progress;Technology+Enthusiast" />
+</p>
 
 ---
 
 ## 👨‍💻 About Me
 
 - 🎓 B.Tech in Software & Intelligent Systems (2nd Year)
-- 💻 2+ years of freelance/client project experience
+- 💼 2+ Years of Freelance / Client Project Experience
 - 🚀 Experienced in Laravel, PHP & MySQL
-- 🌱 Currently exploring MERN Stack, AI and IoT
+- 🌱 Currently learning MERN Stack, AI & IoT
 - 🎯 Interested in Software Engineering and Full-Stack Development
-- 📍 Based in Sri Lanka
+- 📍 Sri Lanka
 
 ---
 
-## 🛠️ Technical Skills
+## 🛠️ Languages & Technologies
 
-### Programming Languages
-- PHP
-- JavaScript
-- HTML5
-- CSS3
+### 💻 Programming Languages
 
-### Frameworks & Technologies
-- Laravel
-- Bootstrap
-- Node.js (Learning)
-- React.js (Learning)
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=php,js,html,css,c,cpp" />
+</p>
 
-### Database
-- MySQL
+### ⚡ Frameworks & Libraries
 
-### Tools
-- Git
-- GitHub
-- VS Code
-- Composer
-- Postman
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=laravel,react,nodejs,bootstrap" />
+</p>
+
+### 🗄️ Database
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=mysql,mongodb" />
+</p>
+
+### 🔧 Tools & Platforms
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,postman,linux,windows,composer" />
+</p>
+
+### 🔌 IoT & Hardware
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=arduino" />
+</p>
 
 ---
 
 ## 🚀 Featured Projects
 
-### 1. Web Application Development
-- Developed web applications using Laravel and PHP.
-- Implemented database operations using MySQL.
-- Built responsive user interfaces.
+### 💼 Web Application Development
+- Laravel-based web applications
+- PHP backend development
+- MySQL database management
+- Responsive UI development
 
-### 2. Business Management Systems
-- Experience with business-oriented software solutions.
-- Interested in POS and inventory management systems.
+### 🏢 Business Management Systems
+- POS & Billing Systems
+- Inventory Management
+- Business Web Applications
 
-### 3. IoT & Smart Systems
-- Exploring Arduino, GSM modules and IoT automation.
-- Developing knowledge of hardware-software integration.
-
-> Add your actual GitHub project links and screenshots here.
+### 🤖 IoT & Smart Systems
+- Arduino Projects
+- GSM-Based Automation
+- Smart Farm Systems
 
 ---
 
 ## 📚 Currently Learning
 
-- Advanced Laravel Development
+- Advanced Laravel
 - REST API Development
 - MERN Stack
 - Artificial Intelligence
 - Internet of Things (IoT)
-- Data Structures and Algorithms
+- Data Structures & Algorithms
 
 ---
 
 ## 📊 GitHub Statistics
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR-USERNAME&show_icons=true&theme=default)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR-USERNAME&layout=compact&theme=default)
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=YOUR-USERNAME&show_icons=true&theme=default&hide_border=true" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR-USERNAME&layout=compact&theme=default&hide_border=true" />
+</p>
 
 ---
 
 ## 🤝 Connect With Me
 
-- GitHub: https://github.com/YOUR-USERNAME
-- LinkedIn: Add your LinkedIn profile URL
-- Email: Add your professional email address
+<p align="left">
+  <a href="https://github.com/YOUR-USERNAME">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="YOUR-LINKEDIN-URL">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+</p>
 
 ---
 
 ## 💡 My Goal
 
-To become a skilled Software Engineer by continuously learning, building real-world applications, solving problems, and contributing to innovative technology solutions.
+To become a skilled Software Engineer by building real-world applications, solving problems, learning emerging technologies and contributing to innovative software solutions.
 
 ---
 
-⭐ Thank you for visiting my GitHub profile!
-
-**Let's build something meaningful together.**
+<p align="center">
+  ⭐ Thanks for visiting my GitHub profile!
+  <br/>
+  <b>Let's build something meaningful together 🚀</b>
+</p>
